@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SVG Fill on Scroll Demo</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="parent">
+        <div class="inner">
+            <!-- Nothing to do with SVG Fill, some fancy fireworks at the completion of svg stroke filling. -->
+            <div id="fireworks">
+                <div class="before"></div>
+                <div class="after"></div>
+            </div>
+            <!--  -->
+
+            <!-- The Actual SVG -->
+            <svg id="Layer_1" class="logo" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 237.99 293.35">
+                <defs>
+                    <style>
+                        .cls-1-bg {
+                            fill: none;
+                            stroke-miterlimit: 5;
+                            stroke-linejoin: round;
+                            stroke-width: 8px;
+                            stroke: url(#linear-gradient);
+                            opacity: 0.15;
+                        }
+
+                        .cls-1 {
+                            fill: none;
+                            stroke-miterlimit: 5;
+                            stroke-linejoin: round;
+                            stroke-width: 8px;
+                            stroke: url(#linear-gradient);
+                        }
+                    </style>
+                    <linearGradient id="linear-gradient" x1="6.49" y1="151.03" x2="244.48" y2="151.03"
+                        gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#6962ff" />
+                        <stop offset="1" stop-color="#44d0ff" />
+                    </linearGradient>
+                </defs>
+                <title>Scroll SVG</title>
+                <path class="cls-1-bg smooth-fill" id="myPathBg"
+                    d="M10.5,195.36q0,26.47,0,52.94,0,8.76,0,17.53c0,13.85,9,24.7,22.55,27.4a23.18,23.18,0,0,0,4.48.43c32.34,0,64.69.15,97-.09,17.83-.13,35.31-2.8,52-9.56,18.33-7.44,33.21-19,43.13-36.42a82.72,82.72,0,0,0,10.29-33c2.62-25.6-5.61-47.75-21.32-67.52-1.66-2.09-3.25-4-3-6.91a9.71,9.71,0,0,1,.94-3.3,141.56,141.56,0,0,0,10.67-33,76.48,76.48,0,0,0,.5-21.6,79.75,79.75,0,0,0-9.39-30.74c-8-14.5-19.85-24.94-34.65-32.12a110.27,110.27,0,0,0-36.86-10.1,181.78,181.78,0,0,0-19.22-1q-57.46,0-114.91,0c-1.65,0-2.24.25-2.24,2.12.07,37.9,0,75.8.07,113.7,0,10,.94,20,4.8,29.38,5.65,13.78,16,21.3,30.67,23.2,4.1.53,8.19.08,12.29.07q47-.11,94.08,0c14.07,0,25.59,8.89,28.62,22.14A28,28,0,0,1,157.29,233a38.43,38.43,0,0,1-4.83.3q-52.6,0-105.19,0c-1.65,0-2.14.35-2.09,2.06.13,4.74,0,9.49,0,14.23,0,5.81,3.63,9.43,9.41,9.43,26.15,0,52.31.09,78.46-.05,14.06-.08,27.89-1.89,41-7.29,10.46-4.3,19.34-10.65,25.15-20.61,5.22-8.94,7.07-18.7,6.46-29-1-17.72-10.71-29.74-25.41-38.42a83.7,83.7,0,0,0-17.88-7.83c-3.56-1.1-6.12-3.25-7.14-6.9a9.53,9.53,0,0,1,6.29-11.74,57.27,57.27,0,0,0,12.47-5.5c10.6-6.64,16.54-16.37,18.64-28.53,1.64-9.53,1.35-19-1.85-28.23-4.4-12.66-13.46-20.88-25.62-25.9a77.57,77.57,0,0,0-26.46-5.59c-20.12-.86-40.26-.21-60.39-.36C68,43,57.55,43.1,47.13,43c-1.44,0-2,.23-2,1.85.12,5.32.11,10.65,0,16,0,1.57.45,1.91,1.94,1.91,30.15,0,60.29,0,90.44-.06,7.27,0,13.82,1.83,19.41,6.54a27.25,27.25,0,0,1,10.14,22.21,28.16,28.16,0,0,1-25.38,27.6,43.18,43.18,0,0,1-4.34.08H48.87c-3.65,0-3.65,0-3.65,3.57,0,2.2,0,13.4,0,15.6a9.29,9.29,0,0,0,9.56,9.52c7.15,0,83.48,0,90.66,0"
+                    transform="translate(-6.49 -4.36)" />
+                <path class="cls-1" id="myPath"
+                    d="M10.5,195.36q0,26.47,0,52.94,0,8.76,0,17.53c0,13.85,9,24.7,22.55,27.4a23.18,23.18,0,0,0,4.48.43c32.34,0,64.69.15,97-.09,17.83-.13,35.31-2.8,52-9.56,18.33-7.44,33.21-19,43.13-36.42a82.72,82.72,0,0,0,10.29-33c2.62-25.6-5.61-47.75-21.32-67.52-1.66-2.09-3.25-4-3-6.91a9.71,9.71,0,0,1,.94-3.3,141.56,141.56,0,0,0,10.67-33,76.48,76.48,0,0,0,.5-21.6,79.75,79.75,0,0,0-9.39-30.74c-8-14.5-19.85-24.94-34.65-32.12a110.27,110.27,0,0,0-36.86-10.1,181.78,181.78,0,0,0-19.22-1q-57.46,0-114.91,0c-1.65,0-2.24.25-2.24,2.12.07,37.9,0,75.8.07,113.7,0,10,.94,20,4.8,29.38,5.65,13.78,16,21.3,30.67,23.2,4.1.53,8.19.08,12.29.07q47-.11,94.08,0c14.07,0,25.59,8.89,28.62,22.14A28,28,0,0,1,157.29,233a38.43,38.43,0,0,1-4.83.3q-52.6,0-105.19,0c-1.65,0-2.14.35-2.09,2.06.13,4.74,0,9.49,0,14.23,0,5.81,3.63,9.43,9.41,9.43,26.15,0,52.31.09,78.46-.05,14.06-.08,27.89-1.89,41-7.29,10.46-4.3,19.34-10.65,25.15-20.61,5.22-8.94,7.07-18.7,6.46-29-1-17.72-10.71-29.74-25.41-38.42a83.7,83.7,0,0,0-17.88-7.83c-3.56-1.1-6.12-3.25-7.14-6.9a9.53,9.53,0,0,1,6.29-11.74,57.27,57.27,0,0,0,12.47-5.5c10.6-6.64,16.54-16.37,18.64-28.53,1.64-9.53,1.35-19-1.85-28.23-4.4-12.66-13.46-20.88-25.62-25.9a77.57,77.57,0,0,0-26.46-5.59c-20.12-.86-40.26-.21-60.39-.36C68,43,57.55,43.1,47.13,43c-1.44,0-2,.23-2,1.85.12,5.32.11,10.65,0,16,0,1.57.45,1.91,1.94,1.91,30.15,0,60.29,0,90.44-.06,7.27,0,13.82,1.83,19.41,6.54a27.25,27.25,0,0,1,10.14,22.21,28.16,28.16,0,0,1-25.38,27.6,43.18,43.18,0,0,1-4.34.08H48.87c-3.65,0-3.65,0-3.65,3.57,0,2.2,0,13.4,0,15.6a9.29,9.29,0,0,0,9.56,9.52c7.15,0,83.48,0,90.66,0"
+                    transform="translate(-6.49 -4.36)" />
+            </svg>
+            <!--  -->
+
+            <!-- The Mouse Icon and related text -->
+            <div class="scroll-container">
+                <svg width="40px" class="scroll-mouse" viewBox="0 0 247 390" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                    style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                    <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20px;" />
+                    <path id="mouse"
+                        d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z"
+                        style="fill:none;stroke:#fff;stroke-width:20px;" />
+                </svg>
+                <p class="scroll-text">Scroll down your way to magic.</p>
+            </div>
+            <!--  -->
+        </div>
+    </div>
+
+    <script>
+        // The real game-changer function responsible to fill svg as we scroll.
+        drawOnScroll = () => {
+            // Get the id of the <path> element and the length of <path>
+            var path = document.getElementById("myPath");
+            var length = path.getTotalLength();
+
+            // The start position of the drawing
+            path.style.strokeDasharray = length;
+            // Hide the path by offsetting dash. Remove this line to show the path before scroll draw
+            path.style.strokeDashoffset = length;
+
+            // Find scroll percentage on scroll (using cross-browser properties), and offset dash same amount as
+            // percentage scrolled
+            window.addEventListener("scroll", fillOnScroll);
+
+            function fillOnScroll() {
+
+                // This long calculation is just needed to find out the percentage of the webpage that has been scrolled.
+                // You don't need to worry about it much. Can be used as is all the time.
+                var scrollpercent = (document.body.scrollTop + document.documentElement.scrollTop) /
+                    (document.documentElement.scrollHeight - document.documentElement.clientHeight);
+
+                // Sets draw to (the progress of scroll multiplied by the length) to find exact offset.
+                var draw = length * scrollpercent;
+
+                // In downward scroll, simply decreases the strokeDashOffset gradually towards zero.
+                // Reverse the drawing (when scrolling upwards)
+                path.style.strokeDashoffset = length - draw;
+
+                // Fancy stuff to show fireworks when svg completes stroke filling (strokeDashOffset = 0)
+                if (path.style.strokeDashoffset <= 0) {
+                    if (!document.getElementById("fireworks").classList.value.includes("pyro")) {
+                        document.getElementById("fireworks").classList.add("pyro")
+                    }
+                } else {
+                    if (document.getElementById("fireworks").classList.value.includes("pyro")) {
+                        document.getElementById("fireworks").classList.remove("pyro")
+                    }
+                }
+                // 
+            }
+        }
+
+        // Invoking the function once so that it set ups the event listener for scroll.
+        drawOnScroll();
+    </script>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+        integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous">
+    </script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
